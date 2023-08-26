@@ -1,0 +1,54 @@
+
+ <html>
+<head>
+<title>HTML Calculator</title>
+  <link rel="icon" type="image/x-icon" href="https://naukrimilna.com/wp-content/uploads/2022/04/Untitled-design-19-1-1536x1536.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {background-color:black;
+margin:25px;}
+.button1 {color:white;
+          background-color:black;
+          border:1px solid grey;
+          font-size:32px;
+          padding:8px;
+          margin:20px;
+          height:50px;
+          width:50px;}
+.button1:active {background-color:#333333;}
+.box {background-color:#404040;
+      height:500px;
+      width:450px;
+      border:1px solid white;
+      }
+      </style>
+</head>
+<div class="box">
+<form name="calculator" >
+<input type="textfield" name="ans" value="" style="margin:20px;color:white;font-size:80px;background-color:#8c8c8c;height:100px;width:420px;"><br>
+<input class="button1" type="button" value="1" onClick="document.calculator.ans.value+='1'">
+<input class="button1" type="button" value="2" onClick="document.calculator.ans.value+='2'">
+<input class="button1" type="button" value="3" onClick="document.calculator.ans.value+='3'">
+<input class="button1" type="button" value="-" onClick="document.calculator.ans.value+='-'"><br>
+<input class="button1" type="button" value="4" onClick="document.calculator.ans.value+='4'">
+<input class="button1" type="button" value="5" onClick="document.calculator.ans.value+='5'">
+<input class="button1" type="button" value="6" onClick="document.calculator.ans.value+='6'">
+<input class="button1" type="button" value="+" onClick="document.calculator.ans.value+='+'"><br>
+<input class="button1" type="button" value="7" onClick="document.calculator.ans.value+='7'">
+<input class="button1" type="button" value="8" onClick="document.calculator.ans.value+='8'">
+<input class="button1" type="button" value="9" onClick="document.calculator.ans.value+='9'">
+<input class="button1" type="button" value="*" onClick="document.calculator.ans.value+='*'"><br>
+
+<input class="button1" type="button" value="/" onClick="document.calculator.ans.value+='/'">
+
+<input class="button1" type="button" value="0" onClick="document.calculator.ans.value+='0'">
+<input class="button1" type="reset" value="Reset" style="width:100px;">
+<input class="button1" type="button" value="="  onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+<div>
+</form>
+<h2 style="color:white;text-align:right;">Created by Keshav Garg</h2>
+<h5 style="color:white;text-align:right;">Copyright 2022 | Word Counter</h5>
+
+</body>
+</html>
